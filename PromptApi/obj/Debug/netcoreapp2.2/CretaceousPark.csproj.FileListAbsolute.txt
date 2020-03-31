@@ -1,6 +1,0 @@
-/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/CretaceousPark.csprojAssemblyReference.cache
-/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/CretaceousPark.csproj.CoreCompileInputs.cache
-/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/CretaceousPark.RazorAssemblyInfo.cache
-/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/CretaceousPark.RazorAssemblyInfo.cs
-/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/CretaceousPark.AssemblyInfoInputs.cache
-/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/CretaceousPark.AssemblyInfo.cs
