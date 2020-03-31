@@ -12182,9 +12182,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Desktop/PromptApi.Solution/PromptApi/CretaceousPark.csproj",
-      "projectName": "CretaceousPark",
-      "projectPath": "/Users/apple/Desktop/PromptApi.Solution/PromptApi/CretaceousPark.csproj",
+      "projectUniqueName": "/Users/apple/Desktop/PromptApi.Solution/PromptApi/PromptApi.csproj",
+      "projectName": "PromptApi",
+      "projectPath": "/Users/apple/Desktop/PromptApi.Solution/PromptApi/PromptApi.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
       "outputPath": "/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/",
       "projectStyle": "PackageReference",

@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Prompt.Models;
+using PromptApi.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
 
-namespace Prompt.Controllers
+namespace PromptApi.Controllers
+
 {
   [Route("api/[controller]")]
   [ApiController]
@@ -19,26 +21,43 @@ namespace Prompt.Controllers
 
     // GET api/prompts
     [HttpGet]
-    public ActionResult<IEnumerable<Prompt>> Get(string title, string content, string authorName)
+    public ActionResult<IEnumerable<Prompt>> Get(string title, string content, string authorName, string journal)
     {
       var query = _db.Prompts.AsQueryable();
 
       if (title != null)
       {
-        query = query.Where(entry => entry.title == title);
+        query = query.Where(entry => entry.Title == title);
       }
 
       if (content != null)
       {
-        query = query.Where(entry => entry.content == content);
+        query = query.Where(entry => entry.Content == content);
       }
 
-      if (AuthorName != null)
+      if (authorName != null)
       {
-        query = query.Where(entry => entry.authorName == authorName);
+        query = query.Where(entry => entry.AuthorName == authorName);
+      }
+
+      if (journal != null)
+      {
+        query = query.Where(entry => entry.Journal == journal);
       }
 
       return query.ToList();
+    }
+
+    // GET api/prompts/random
+    [HttpGet("random")]
+    public ActionResult<Prompt> GetRandom()
+    {
+
+      Random rnd = new Random();
+      var query = _db.Prompts.AsQueryable();
+      var queryList = query.ToList();
+      var RandomNum = rnd.Next(0, queryList.Count - 1);
+      return queryList[RandomNum];
     }
 
     // POST api/prompts
@@ -61,7 +80,11 @@ namespace Prompt.Controllers
     public void Put(int id, [FromBody] Prompt prompt)
     {
       prompt.PromptId = id;
-      _db.Entry(prompt).State = EntityState.Modified;
+
+      if (prompt.Authentication == prompt.AuthorName)
+      {
+        _db.Entry(prompt).State = EntityState.Modified;
+      }
       _db.SaveChanges();
     }
 
@@ -70,7 +93,10 @@ namespace Prompt.Controllers
     public void Delete(int id)
     {
       var promptToDelete = _db.Prompts.FirstOrDefault(entry => entry.PromptId == id);
-      _db.Prompts.Remove(promptToDelete);
+      if (promptToDelete.Authentication == promptToDelete.AuthorName)
+      {
+        _db.Prompts.Remove(promptToDelete);
+      }
       _db.SaveChanges();
     }
   }

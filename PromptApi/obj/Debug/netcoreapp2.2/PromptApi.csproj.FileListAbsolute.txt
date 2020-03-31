@@ -1,0 +1,14 @@
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/bin/Debug/netcoreapp2.2/PromptApi.deps.json
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/bin/Debug/netcoreapp2.2/PromptApi.runtimeconfig.json
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/bin/Debug/netcoreapp2.2/PromptApi.runtimeconfig.dev.json
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/bin/Debug/netcoreapp2.2/PromptApi.dll
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/bin/Debug/netcoreapp2.2/PromptApi.pdb
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.csprojAssemblyReference.cache
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.csproj.CoreCompileInputs.cache
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.RazorAssemblyInfo.cache
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.RazorAssemblyInfo.cs
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.AssemblyInfoInputs.cache
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.AssemblyInfo.cs
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.RazorTargetAssemblyInfo.cache
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.dll
+/Users/apple/Desktop/PromptApi.Solution/PromptApi/obj/Debug/netcoreapp2.2/PromptApi.pdb
