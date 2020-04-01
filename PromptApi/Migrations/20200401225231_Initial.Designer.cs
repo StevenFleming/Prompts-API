@@ -8,7 +8,7 @@ using PromptApi.Models;
 namespace PromptApi.Migrations
 {
     [DbContext(typeof(PromptContext))]
-    [Migration("20200331175222_Initial")]
+    [Migration("20200401225231_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
